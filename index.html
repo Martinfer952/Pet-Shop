@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/iconos/perro.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https:cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!--------------- inicio header --------------->
+    <!--------------------------------------------->
+    <header>
+      <div class="navegador contenedor">
+        <div class="toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <a class="logo" href="#">
+          <img src="img/logo.png" alt="" />
+        </a>
+
+        <div class="nav-barra desactivado">
+          <ul>
+            <li class="perr">
+              <a class="link-nav" href="#">
+                <img class="icon-link-nav" src="img/iconos/perro.png" alt="" />
+                Perros</a
+              >
+            </li>
+            <li class="gat">
+              <a class="link-nav" href="#"
+                ><img
+                  class="icon-link-nav"
+                  src="img/iconos/gato.png"
+                  alt=""
+                />Gatos</a
+              >
+            </li>
+            <li class="av">
+              <a class="link-nav" href="#"
+                ><img
+                  class="icon-link-nav"
+                  src="img/iconos/pajaro-del-amor.png"
+                  alt=""
+                />Aves</a
+              >
+            </li>
+            <li class="pec">
+              <a class="link-nav" href="#"
+                ><img
+                  class="icon-link-nav"
+                  src="img/iconos/pez.png"
+                  alt=""
+                />Peces</a
+              >
+            </li>
+            <li class="roe">
+              <a class="link-nav" href="#"
+                ><img
+                  class="icon-link-nav"
+                  src="img/iconos/hamster.png"
+                  alt=""
+                />Roedores</a
+              >
+            </li>
+            <li class="ofer">
+              <a class="link-nav" href="#"
+                ><img
+                  class="icon-link-nav"
+                  src="img/iconos/descuento.png"
+                  alt=""
+                />Ofertas</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="buscador">
+          <input
+            type="search"
+            placeholder="¿Qué estás buscando?"
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='¿Qué estás buscando?'"
+          />
+          <i class="fa-solid fa-magnifying-glass lupa-icon"></i>
+        </div>
+
+        <div class="carrito">
+          <i class="carrito-icon" id="cart-btn"
+            ><img src="img/iconos/carrito.png" alt=""
+          /></i>
+          <div class="contador-carrito">
+            <span class="num-contador">0</span>
+          </div>
+        </div>
+        <div class="shopping-cart d_none">
+          <i class="fa-solid fa-xmark"></i>
+          <h3 class="heading">Mi Carrito</h3>
+          <div class="box-scroll tbody">
+            <div class="box">
+              <i class="fas fa-trash btn-eliminar-item"></i>
+              <img src="img/iconos/gato.png" alt="" />
+              <div class="contenido">
+                <h3 class="tittle">Alimento gato</h3>
+                <span class="precio">$700</span>
+                <input type="number" min="1" value="1" class="cantidad" />
+              </div>
+            </div>
+          </div>
+          <div class="total">Total : $0</div>
+          <a href="#" class="btn">checkout</a>
+        </div>
+      </div>
+      <!---------------------fin nav--------------------->
+    </header>
+    <!----------------- fin header ----------------->
+
+    <main>
+      <!-- seccion principal -->
+      <section class="hero">
+        <div class="hero_text">
+          <span class="pet_care">#Pet Shop</span>
+          <h1 class="hero_title">
+            Ofrecemos los <span>mejores productos</span> para tus mascotas
+          </h1>
+          <p>
+            ¡Encontrá los mejores precios para tus mascotas! Ellos son todo para
+            nosotros y por eso, decidimos ofrecerte los mejores productos al
+            mejor precio para que no le falte nada.
+          </p>
+          <div class="hero_button">
+            <button class="button">Comprar Ahora</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- seccion suministros -->
+      <section class="suministros">
+        <div class="suministros_title">
+          <h2>Suplementos Para Mascotas</h2>
+        </div>
+        <div class="grid">
+          <div class="suministros_box">
+            <div class="img_box">
+              <img src="img/suministros/dog-food-1.png" alt="" />
+            </div>
+            <div class="box_text">
+              <a href="#" class="box_title">Alimentos</a>
+              <p class="box_parrafo">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="suministros_box">
+            <div class="img_box">
+              <img src="img/suministros/food-bowis-2.png" alt="" />
+            </div>
+            <div class="box_text">
+              <a href="#" class="box_title">Comederos y Bebederos</a>
+              <p class="box_parrafo">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="suministros_box">
+            <div class="img_box">
+              <img src="img/suministros/accesories-3.png" alt="" />
+            </div>
+            <div class="box_text">
+              <a href="#" class="box_title">Accesorios</a>
+              <p class="box_parrafo">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="suministros_box ocultar">
+            <div class="img_box">
+              <img src="img/suministros/pecera-4.png" alt="" />
+            </div>
+            <div class="box_text">
+              <a href="#" class="box_title">Peceras</a>
+              <p class="box_parrafo">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="suministros_box ocultar">
+            <div class="img_box">
+              <img src="img/suministros/dog-bed-5.png" alt="" />
+            </div>
+            <div class="box_text">
+              <a href="#" class="box_title">Camas</a>
+              <p class="box_parrafo">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="suministros_box ocultar">
+            <div class="img_box">
+              <img src="img/suministros/rascadores-6.png" alt="" />
+            </div>
+            <div class="box_text">
+              <a href="#" class="box_title">Rascadores para gatos</a>
+              <p class="box_parrafo">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="btn_sum">Ver más</button>
+        <button class="btn_sum_menos ocultar">Ver menos</button>
+      </section>
+
+      <!-- seccion cuadros grid -->
+      <section class="cuadros_grid">
+        <div class="cuadro_uno">
+          <div class="cuadro_uno_titulo">
+            <h2 class="titulo_left">Visita Nuestro</h2>
+            <a href="#" class="titulo_right">Pet Shop</a>
+          </div>
+        </div>
+        <div class="cuadro_dos">
+          <div class="cuadro_dos_text">
+            <a href="#">¿Qué cuidados necesita tu mascota?</a>
+            <p>
+              La salud de nuestras mascotas es muy importante, por eso, aquí te
+              daremos todos los tips que necesitas saber para que tu mejor amigo
+              esté saludable.
+            </p>
+            <button class="btn_ver_mas">Ver Más</button>
+          </div>
+        </div>
+        <div class="cuadro_tres">
+          <div class="cuadro_tres_text">
+            <a class="cuadro_tres_title" href="#">Adoptá</a>
+            <p class="cuadro_tres_parrafo">
+              Adopta a un amigo que espera por un hogar. Ellos se adaptan a tu
+              espacio, solo necesitan de mucho amor.
+            </p>
+            <button class="btn_ver_mas">Ver Más</button>
+          </div>
+        </div>
+        <div class="cuadro_cuatro">
+          <div class="text_cuadro_cuatro">
+            <a href="#">Todo Sobre Mascotas</a>
+            <p>
+              Aquí vas a encontrar todo lo que necesitaras saber sobre el mundo
+              de nuestras mascotas.
+            </p>
+            <button class="btn_ver_mas">Ver Más</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- seccion blog -->
+      <section class="blog">
+        <h2 class="blog_title">Nuestro Blog</h2>
+        <div class="grid_cards_blog">
+          <div class="blog_card">
+            <img src="img/blog/blog-1.jpg" alt="" />
+            <div class="blog_card_content">
+              <div class="fecha_blog">
+                <h2>24</h2>
+                <p>Aug 2022</p>
+              </div>
+              <div class="text_blog">
+                <h2>Temporary Title</h2>
+                <h3>Subtitle here</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+                  libero accusamus consequuntur. Cum, id quae.
+                  <a href="#">Leer Más</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="blog_card">
+            <img src="img/blog/blog-2.jpg" alt="" />
+            <div class="blog_card_content">
+              <div class="fecha_blog">
+                <h2>08</h2>
+                <p>Nov 2022</p>
+              </div>
+              <div class="text_blog">
+                <h2>Temporary Title</h2>
+                <h3>Subtitle here</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+                  libero accusamus consequuntur. Cum, id quae.
+                  <a href="#">Leer Más</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="blog_card">
+            <img src="img/blog/blog-3.jpg" alt="" />
+            <div class="blog_card_content">
+              <div class="fecha_blog">
+                <h2>14</h2>
+                <p>Dec 2022</p>
+              </div>
+              <div class="text_blog">
+                <h2>Temporary Title</h2>
+                <h3>Subtitle here</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+                  libero accusamus consequuntur. Cum, id quae.
+                  <a href="#">Leer Más</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- seccion slider comidas -->
+      <section class="slider">
+        <div class="titulo">
+          <h2>Lo Más Vendido</h2>
+        </div>
+        <!-- Swiper -->
+        <div class="slider_contenedor">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="img/slider-img/sieger-cachorro.png" alt="" />
+                  <div class="content_slider">
+                    <div class="text_card_slider">
+                      <h2 class="titulo_card_slider">
+                        Sieger Perro Cachorro | 3kg
+                      </h2>
+                      <p class="parrafo_card_slider">
+                        Alimento Sieger para perros cachorros.
+                      </p>
+                    </div>
+                    <div class="precio_card_slider">
+                      <p class="precio">$100.00</p>
+                    </div>
+                  </div>
+                  <button class="btn">Agregar al carrito</button>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="img/slider-img/proplan-gato.png" alt="" />
+                  <div class="content_slider">
+                    <div class="text_card_slider">
+                      <h2 class="titulo_card_slider">
+                        ProPlan Gato Adulto | 15kg
+                      </h2>
+                      <p class="parrafo_card_slider">
+                        Alimento completo y balanceado para gatos adultos.
+                      </p>
+                    </div>
+                    <div class="precio_card_slider">
+                      <p class="precio">$100.00</p>
+                    </div>
+                  </div>
+                  <button class="btn">Agregar al carrito</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="img/slider-img/voraz-alimento-adulto.png" alt="" />
+                  <div class="content_slider">
+                    <div class="text_card_slider">
+                      <h2 class="titulo_card_slider">
+                        Voraz Perro Adulto | 20kg
+                      </h2>
+                      <p class="parrafo_card_slider">
+                        Alimento Voraz para perro adulto con sabor a carne.
+                      </p>
+                    </div>
+                    <div class="precio_card_slider">
+                      <p class="precio">$100.00</p>
+                    </div>
+                  </div>
+                  <button class="btn">Agregar al carrito</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="img/slider-img/whiskas-gato.webp" alt="" />
+                  <div class="content_slider">
+                    <div class="text_card_slider">
+                      <h2 class="titulo_card_slider">
+                        Whiskas Gato Adulto | 85g
+                      </h2>
+                      <p class="parrafo_card_slider">
+                        Alimento Whiskas húmedo con sabor a carne.
+                      </p>
+                    </div>
+                    <div class="precio_card_slider">
+                      <p class="precio">$100.00</p>
+                    </div>
+                  </div>
+                  <button class="btn">Agregar al carrito</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="img/slider-img/rosco-carne-perro.png" alt="" />
+                  <div class="content_slider">
+                    <div class="text_card_slider">
+                      <h2 class="titulo_card_slider">
+                        Rosco Carne Perro Adulto | 15kg
+                      </h2>
+                      <p class="parrafo_card_slider">
+                        Carne para perros y gatos adultos.
+                      </p>
+                    </div>
+                    <div class="precio_card_slider">
+                      <p class="precio">$100.00</p>
+                    </div>
+                  </div>
+                  <button class="btn">Agregar al carrito</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="img/slider-img/cookies-roedores.png" alt="" />
+                  <div class="content_slider">
+                    <div class="text_card_slider">
+                      <h2 class="titulo_card_slider">
+                        Cookies Roedores | 200g
+                      </h2>
+                      <p class="parrafo_card_slider">
+                        Alimento Cookies para roedores.
+                      </p>
+                    </div>
+                    <div class="precio_card_slider">
+                      <p class="precio">$100.00</p>
+                    </div>
+                  </div>
+                  <button class="btn">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- redes -->
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-google"></i></a>
+      </div>
+
+      <!-- seccion food premium -->
+      <section class="food_premium">
+        <div class="contenido_food_premium">
+          <h3>Gran elección para tu mascota</h3>
+          <h2>Alimento Premium</h2>
+          <input
+            type="email"
+            id="email_premium"
+            placeholder="Ingrese su email"
+          />
+          <button class="btn">Suscribirse</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer_content">
+        <div class="suscripcion">
+          <h2 class="titulo_subs">SUSCRÍBETE</h2>
+          <p class="parrafo_subs">
+            Suscribite para recibir info de nuestros nuevos productos y ofertas.
+          </p>
+          <input type="email" id="input_Subs" placeholder="Ingrese su email" />
+          <button class="btn">Enviar</button>
+        </div>
+        <div class="contacto">
+          <h2 class="titulo_contacto">TIENES UNA PREGUNTA?</h2>
+          <h3 class="subtitulo_contacto">CONTACTANOS.</h3>
+          <p class="numero_contacto">(01)-123-456-789</p>
+        </div>
+        <div class="horarios">
+          <h2 class="titulo_horario">HORARIOS</h2>
+          <div class="horarios_content">
+            <p class="dia">Lun a Vie</p>
+            <p class="hora">10:00am - 17:00pm</p>
+          </div>
+          <div class="horarios_content">
+            <p class="dia">Sabado</p>
+            <p class="hora">10:00am - 15:00pm</p>
+          </div>
+          <div class="horarios_content">
+            <p class="dia">Domingo</p>
+            <p class="hora">Cerrado</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer_copy">
+        <p>©2023 Todos los derechos reservados. Hecho por Martin Fernandez.</p>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script src="js/app.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: {
+          delay: 7000,
+          disableOnInteraction: false,
+        },
+        keyboard: {
+          enabled: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
