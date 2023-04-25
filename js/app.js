@@ -1,17 +1,40 @@
-// window.onload = () => {
-//   swiperBucle();
-// };
+/************** NAV SCROLL **************/
+/**************************************/
+window.addEventListener("scroll", () => {
+  var header = document.querySelector(".navegador");
+  header.classList.toggle("sticky", window.scrollY > 0);
+});
 
-/*************** MENU BTN***************/
+/*************** NAV ***************/
+/**************************************/
+const navmenu = document.querySelector(".nav_menu");
+const navlist = document.querySelector(".nav_list");
+const btnVolver = document.querySelector(".btn_volver");
+const dropdown = document.querySelector(".dropdown");
+const cerrarNav = document.querySelector(".cerrarNav");
+
+dropdown.addEventListener("click", () => {
+  btnVolver.classList.add("btn_volver_active");
+});
+
+btnVolver.addEventListener("click", () => {
+  btnVolver.classList.remove("btn_volver_active");
+});
+
+cerrarNav.addEventListener("click", () => {
+  menuToggle.classList.remove("active");
+  navlist.classList.remove("show_menu");
+});
+
+/*************** MENU BTN ***************/
 /**************************************/
 const menuToggle = document.querySelector(".toggle");
 menuToggle.addEventListener("click", () => {
-  const navBarra = document.querySelector(".nav-barra");
   menuToggle.classList.toggle("active");
-  navBarra.classList.toggle("desactivado");
+  navmenu.classList.toggle("show_menu");
 });
 
-/************* CARRITO BOX*************/
+/************* CARRITO BOX *************/
 /**************************************/
 let shoppingCart = document.querySelector(".shopping-cart");
 let tbody = document.querySelector(".tbody");
@@ -19,16 +42,17 @@ let carrito = [];
 
 document.querySelector("#cart-btn").onclick = () => {
   shoppingCart.classList.toggle("active");
-  shoppingCart.classList.toggle("d_none");
 };
 
-let btnCerrarCarrito = document.querySelector(".fa-xmark");
+let btnCerrarCarrito = document.querySelector(".cerrarCarrito");
 btnCerrarCarrito.addEventListener("click", () => {
   shoppingCart.classList.remove("active");
 });
 
 window.onscroll = () => {
   shoppingCart.classList.remove("active");
+  menuToggle.classList.remove("active");
+  navlist.classList.remove("show_menu");
 };
 
 function addItemCarrito(newItem) {
@@ -111,7 +135,7 @@ function sumaCantidad(e) {
   });
 }
 
-/************* BOTON VER MAS SUMINISTROS*************/
+/************* BOTON VER MAS SUMINISTROS *************/
 /****************************************************/
 let verMas = document.querySelector(".btn_sum");
 let verMenos = document.querySelector(".btn_sum_menos");
