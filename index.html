@@ -8,7 +8,10 @@
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
     />
     <title>Pet Shop</title>
-    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="img/iconos/perro.png" type="image/x-icon" />
@@ -33,61 +36,114 @@
           <img src="img/logo.png" alt="" />
         </a>
 
-        <div class="nav-barra desactivado">
-          <ul>
-            <li class="perr">
-              <a class="link-nav" href="#">
-                <img class="icon-link-nav" src="img/iconos/perro.png" alt="" />
-                Perros</a
-              >
-            </li>
-            <li class="gat">
-              <a class="link-nav" href="#"
-                ><img
-                  class="icon-link-nav"
-                  src="img/iconos/gato.png"
-                  alt=""
-                />Gatos</a
-              >
-            </li>
-            <li class="av">
-              <a class="link-nav" href="#"
-                ><img
-                  class="icon-link-nav"
-                  src="img/iconos/pajaro-del-amor.png"
-                  alt=""
-                />Aves</a
-              >
-            </li>
-            <li class="pec">
-              <a class="link-nav" href="#"
-                ><img
-                  class="icon-link-nav"
-                  src="img/iconos/pez.png"
-                  alt=""
-                />Peces</a
-              >
-            </li>
-            <li class="roe">
-              <a class="link-nav" href="#"
-                ><img
-                  class="icon-link-nav"
-                  src="img/iconos/hamster.png"
-                  alt=""
-                />Roedores</a
-              >
-            </li>
-            <li class="ofer">
-              <a class="link-nav" href="#"
-                ><img
-                  class="icon-link-nav"
-                  src="img/iconos/descuento.png"
-                  alt=""
-                />Ofertas</a
-              >
-            </li>
-          </ul>
-        </div>
+        <ul class="nav_list nav_menu">
+          <i class="fa-solid fa-xmark cerrarNav"></i>
+          <li class="nav_item"><a class="nav_link" href="#home">Home</a></li>
+          <button class="btn_volver">volver</button>
+          <li class="nav_item dropdown">
+            <a class="nav_link dropdown_link" href="#"
+              >Productos <i class="fas fa-angle-down"></i
+            ></a>
+
+            <div class="megamenu">
+              <ul class="content">
+                <li class="megamenu_item megamenu_header">Alimentos</li>
+                <li class="megamenu_item">
+                  <div class="megamenu_link">
+                    <a href="#">Perros</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+                <li class="megamenu_item">
+                  <div class="megamenu_link">
+                    <a href="#">Gatos</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+                <li class="megamenu_item">
+                  <div class="megamenu_link">
+                    <a href="#">Aves</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+                <li class="megamenu_item">
+                  <div class="megamenu_link">
+                    <a href="#">Roedores</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="content">
+                <li class="megamenu_item megamenu_header">Accesorios</li>
+                <li class="megamenu_item">
+                  <div class="megamenu_link">
+                    <a href="#">Collares y Correas</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+                <li class="megamenu_item">
+                  <div class="megamenu_link">
+                    <a href="#">Camas</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+                <li class="megamenu_item">
+                  <div class="megamenu_link">
+                    <a href="#">Comederos y Bebederos</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+                <li class="megamenu_item">
+                  <div class="megamenu_link">
+                    <a href="#">Juguetes</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="content">
+                <li class="megamenu_item megamenu_header">Farmacia</li>
+                <li class="megamenu_item">
+                  <div class="megamenu_link">
+                    <a href="#">Antiparasitos</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+                <li class="megamenu_item">
+                  <div class="megamenu_link">
+                    <a href="#">Pulguicidas</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+                <li class="megamenu_item">
+                  <div class="megamenu_link">
+                    <a href="#">Antiinflamatorios</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+                <li class="megamenu_item">
+                  <div class="megamenu_link">
+                    <a href="#">Champúes y Acondicionadores</a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="content">
+                <li class="megamenu_item megamenu_header" style="gap: 0.5rem">
+                  <a class="ver_todo_btn" href="#"
+                    >Ver todo <i class="fas fa-angle-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#gallery">Adoptá</a>
+          </li>
+          <li class="nav_item"><a class="nav_link" href="#blog">blog</a></li>
+          <li class="nav_item">
+            <a class="nav_link" href="#footer">Contacto</a>
+          </li>
+        </ul>
 
         <div class="buscador">
           <input
@@ -107,8 +163,8 @@
             <span class="num-contador">0</span>
           </div>
         </div>
-        <div class="shopping-cart d_none">
-          <i class="fa-solid fa-xmark"></i>
+        <div class="shopping-cart">
+          <i class="fa-solid fa-xmark cerrarCarrito"></i>
           <h3 class="heading">Mi Carrito</h3>
           <div class="box-scroll tbody">
             <div class="box">
@@ -121,7 +177,7 @@
               </div>
             </div>
           </div>
-          <div class="total">Total : $0</div>
+          <div class="total">Total : $700</div>
           <a href="#" class="btn">checkout</a>
         </div>
       </div>
@@ -131,7 +187,7 @@
 
     <main>
       <!-- seccion principal -->
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="hero_text">
           <span class="pet_care">#Pet Shop</span>
           <h1 class="hero_title">
@@ -149,7 +205,7 @@
       </section>
 
       <!-- seccion suministros -->
-      <section class="suministros">
+      <section class="suministros" id="suministros">
         <div class="suministros_title">
           <h2>Suplementos Para Mascotas</h2>
         </div>
@@ -226,7 +282,7 @@
       </section>
 
       <!-- seccion cuadros grid -->
-      <section class="cuadros_grid">
+      <section class="cuadros_grid" id="gallery">
         <div class="cuadro_uno">
           <div class="cuadro_uno_titulo">
             <h2 class="titulo_left">Visita Nuestro</h2>
@@ -267,7 +323,7 @@
       </section>
 
       <!-- seccion blog -->
-      <section class="blog">
+      <section class="blog" id="blog">
         <h2 class="blog_title">Nuestro Blog</h2>
         <div class="grid_cards_blog">
           <div class="blog_card">
@@ -484,7 +540,7 @@
     </main>
 
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="footer_content">
         <div class="suscripcion">
           <h2 class="titulo_subs">SUSCRÍBETE</h2>
@@ -516,7 +572,14 @@
         </div>
       </div>
       <div class="footer_copy">
-        <p>©2023 Todos los derechos reservados. Hecho por Martin Fernandez.</p>
+        <p>
+          ©2023 Todos los derechos reservados. Hecho por
+          <a
+            style="color: gray"
+            href="https://github.com/Martinfer952?tab=repositories"
+            >Martin Fernandez</a
+          >.
+        </p>
       </div>
     </footer>
 
